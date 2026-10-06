@@ -19,70 +19,48 @@
 
   <main class="policy-main page-shell">
     <header class="policy-header">
-      <p class="eyebrow">Since Then</p>
-      <h1>Privacy policy</h1>
-      <p class="policy-summary">Your trackers stay on your device. Since Then has no accounts or advertising. You can choose whether to share limited, anonymous product analytics.</p>
-      <p class="policy-date"><strong>Effective and last updated:</strong> 6 October 2026</p>
+      <h1>Privacy Policy for Since Then</h1>
+      <p class="policy-date">Last updated: 29 September 2026</p>
     </header>
 
     <article class="policy-body">
-      <section aria-labelledby="local-data">
-        <h2 id="local-data">Information stored on your device</h2>
-        <p>Since Then stores your tracker details locally using storage shared by the app and its widgets. This includes tracker names and icons, start and setback dates, check-ins, goals, savings information, reminder settings, purchase status and your analytics choice.</p>
-        <p>This information is used to calculate and display your progress, update widgets, schedule reminders and remember app settings. It is not sent to Narayan Kuleindiren. Since Then does not require or offer an account, and it does not provide cloud backup or cross-device syncing for tracker data.</p>
-        <p>Deleting the app removes its locally stored data. Because there is no server-side copy, deleted tracker data cannot be recovered by the developer.</p>
+      <p>Since Then is designed to keep the details of your habits private. Your trackers are stored on your device. The app also offers optional product analytics to help me understand how people use it and where it can be improved.</p>
+
+      <section aria-labelledby="information-you-enter">
+        <h2 id="information-you-enter">Information you enter</h2>
+        <p>Your tracker names, individual check-ins and setbacks, dates, goals and optional spending amounts are stored locally on your device and shared locally with the Since Then widget. Since Then does not upload these tracker records to my server or to PostHog. I cannot view or recover your trackers.</p>
+        <p>Your device’s backup settings may affect whether locally stored app data is included in a backup.</p>
       </section>
 
       <section aria-labelledby="analytics">
         <h2 id="analytics">Optional product analytics</h2>
-        <p>Since Then uses PostHog Product Analytics only if you explicitly choose <strong>Share product analytics</strong>. Choosing <strong>No thanks</strong> keeps analytics off. You can change this at any time from the app’s menu under <strong>Privacy &amp; Analytics</strong>.</p>
-        <p>When analytics are enabled, PostHog receives a random installation identifier and limited information about how the app is used. This may include:</p>
-        <ul>
-          <li>app and analytics-library version information;</li>
-          <li>fixed screen names, such as tracker creation, reminders or tracker editing;</li>
-          <li>events such as opening the app, creating or deleting a tracker, completing a check-in, recording a setback or reaching a milestone;</li>
-          <li>broad streak ranges rather than exact streak values;</li>
-          <li>whether optional goal or savings features are enabled, without their values; and</li>
-          <li>notification-permission status.</li>
-        </ul>
-        <p>PostHog may process technical information needed to receive an internet request, including an IP address. Since Then asks PostHog not to use the IP address for location enrichment and limits the event properties it sends.</p>
+        <p>Since Then asks whether you would like to share limited product analytics. Analytics is off until you choose to enable it.You can decline and continue using all the app’s features.</p>
+        <p>If you opt in, PostHog receives a randomly generated identifier for your app installation and limited events about app use. These include opening the app, creating or viewing a tracker, checking in, recording a setback, reaching a milestone and using certain screens. A widget check-in may also generate an event. Events can include broad details, such as whether an optional goal is enabled or which range a streak falls into, as well as the app version and event time.</p>
+        <p>PostHog does not receive tracker names, notes, text you enter, exact tracker dates, exact spending or savings amounts, your name, email address or advertising identifier. The app does not enable session replay, screen recording or automatic capture of on-screen content. Analytics are not used for advertising or to follow you across other apps or websites.</p>
+        <p>Events are sent to PostHog through its EU ingestion endpoint. PostHog may receive technical network information, such as an IP address, when processing a request; the app disables PostHog’s geographic enrichment for its events. You can read <a href="https://posthog.com/privacy">PostHog’s privacy policy</a>.</p>
       </section>
 
-      <section aria-labelledby="not-collected">
-        <h2 id="not-collected">Information not included in analytics</h2>
-        <p>Since Then does not send tracker names, icons or other text you enter; exact tracker, check-in or setback dates; exact streaks; habit identifiers; savings or spending amounts; currency; email address; contacts; location properties; or Apple advertising and vendor identifiers.</p>
-        <p>Session recording, automatic interaction capture, crash and error capture, surveys, advertising tracking and person profiles are disabled. Analytics are not used to follow you across other companies’ apps or websites.</p>
+      <section aria-labelledby="analytics-choice">
+        <h2 id="analytics-choice">Your analytics choice</h2>
+        <p>You can change your choice at any time in the app: tap … → Privacy &amp; Analytics, then turn Share product analytics on or off. Turning it off stops new analytics events from the app and widget. It does not automatically delete events already sent to PostHog.</p>
       </section>
 
-      <section aria-labelledby="analytics-control">
-        <h2 id="analytics-control">Changing your analytics choice</h2>
-        <p>Turning analytics off stops future app and widget events. It does not delete events already delivered to PostHog. To ask about access to or deletion of existing analytics data, contact <a href="mailto:nkuleindiren@gmail.com">nkuleindiren@gmail.com</a>. Because the identifier is anonymous, you may need to provide information from the app to help locate a record.</p>
-        <p>PostHog processes analytics information as a service provider. Read <a href="https://posthog.com/privacy">PostHog’s privacy policy</a> for more information about its practices.</p>
+      <section aria-labelledby="purchases-widgets-reminders">
+        <h2 id="purchases-widgets-reminders">Purchases, widgets and reminders</h2>
+        <p>Optional Pro purchases are handled by Apple through StoreKit. I do not receive your payment card details.</p>
+        <p>Widgets use your locally stored tracker data. If you have opted into analytics, checking in from a widget may send a limited check-in event to PostHog, but not the tracker’s name.</p>
+        <p>Reminders are scheduled using your device’s notification system. Your tracker details are not sent to PostHog as part of a reminder. If you have opted into analytics, the app may record whether notification permission was requested and its resulting status.</p>
       </section>
 
-      <section aria-labelledby="notifications">
-        <h2 id="notifications">Notifications</h2>
-        <p>If you enable reminders, Since Then asks iOS for permission to send notifications and schedules them locally on your device. The app does not use remote marketing notifications. You can change notification permission in iOS Settings.</p>
-      </section>
-
-      <section aria-labelledby="purchases">
-        <h2 id="purchases">Purchases</h2>
-        <p>Since Then Pro is purchased through Apple’s App Store using StoreKit. Apple processes the purchase and provides the app with verified entitlement information; Since Then does not receive your payment-card details. Apple’s handling of purchase information is governed by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
-      </section>
-
-      <section aria-labelledby="website">
-        <h2 id="website">This website</h2>
-        <p>This website does not use analytics, tracking technologies, cookies, advertising or forms. If you follow a link to another website, that website’s privacy practices apply.</p>
+      <section aria-labelledby="retention-deletion">
+        <h2 id="retention-deletion">Retention and deletion requests</h2>
+        <p>Tracker data remains in the app’s local storage until you delete a tracker or remove the app, subject to your device’s backup settings. Analytics events remain in PostHog until they are deleted or removed under the project’s retention settings.</p>
+        <p>To ask about your data or request deletion of analytics records, contact me at <a href="mailto:nkuleindiren@gmail.com">nkuleindiren@gmail.com</a>. Analytics events are not connected to your email address, so I may not be able to identify a particular installation’s records from an email alone.</p>
       </section>
 
       <section aria-labelledby="changes">
         <h2 id="changes">Changes to this policy</h2>
-        <p>This policy may be updated when Since Then’s features or service providers change. The date at the top of the page will show the latest revision.</p>
-      </section>
-
-      <section aria-labelledby="contact">
-        <h2 id="contact">Contact</h2>
-        <p>For privacy questions or requests, email <a href="mailto:nkuleindiren@gmail.com">nkuleindiren@gmail.com</a>.</p>
+        <p>I may update this policy when the app or its data practices change. The date at the top will show when it was last updated.</p>
       </section>
     </article>
   </main>
