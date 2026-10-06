@@ -7,9 +7,9 @@ A dependency-free static website for Narayan Kuleindiren’s iOS apps, hosted wi
 - `/` — app directory
 - `/scene/` — Scene overview and support
 - `/scene/privacy/` — Scene privacy policy
+- `/since-then/` — Since Then overview and support
+- `/since-then/privacy/` — Since Then privacy policy
 - `/app-ads.txt` — Google Mobile Ads publisher declaration
-
-Since Then currently links to its existing support site. Its card can later point to a new `/since-then/` directory without changing the homepage structure.
 
 ## Local preview
 
@@ -49,6 +49,8 @@ Once DNS has propagated and GitHub reports a successful DNS check, enable **Enfo
 
 ## Privacy policy maintenance
 
-The Scene policy reflects the app implementation reviewed on 6 October 2026: local `UserDefaults` persistence, no accounts, Google Mobile Ads, Google User Messaging Platform, ads in Endless and Zen, and an ad-free Daily mode. Review it whenever the app’s data handling, SDKs or ad behaviour changes.
+The Scene policy reflects the app implementation reviewed on 6 October 2026: local `UserDefaults` persistence, no accounts, Google Mobile Ads, Google User Messaging Platform, ads in Endless and Zen, and an ad-free Daily mode.
+
+The Since Then policy reflects the app implementation reviewed on 6 October 2026: local App Group `UserDefaults` persistence, local notifications, StoreKit purchases and optional consent-gated PostHog analytics. Review each policy whenever the corresponding app’s data handling, SDKs or behaviour changes.
 
 This privacy policy is a plain-language technical summary, not legal advice. It should receive human/legal review before being treated as final.
