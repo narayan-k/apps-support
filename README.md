@@ -9,6 +9,8 @@ A dependency-free static website for Narayan Kuleindiren’s iOS apps, hosted wi
 - `/scene/privacy/` — Scene privacy policy
 - `/since-then/` — Since Then overview and support
 - `/since-then/privacy/` — Since Then privacy policy
+- `/untangle/` — Untangle overview and support
+- `/untangle/privacy/` — Untangle privacy policy
 - `/app-ads.txt` — Google Mobile Ads publisher declaration
 
 ## Local preview
@@ -52,5 +54,9 @@ Once DNS has propagated and GitHub reports a successful DNS check, enable **Enfo
 The Scene policy reflects the app implementation reviewed on 6 October 2026: local `UserDefaults` persistence, no accounts, Google Mobile Ads, Google User Messaging Platform, ads in Endless and Zen, and an ad-free Daily mode.
 
 The Since Then policy reflects the app implementation reviewed on 6 October 2026: local App Group `UserDefaults` persistence, local notifications, StoreKit purchases and optional consent-gated PostHog analytics. Review each policy whenever the corresponding app’s data handling, SDKs or behaviour changes.
+
+The Untangle policy reflects the implementation and Privacy handover reviewed on 14 October 2026: local `UserDefaults` game progress and preferences, no accounts or separate product analytics integration, optional Daily result sharing, Google Mobile Ads and Google User Messaging Platform, ads at Levels/Zen continuation points and an ad-free Daily mode. The supplied app icon is copied to `assets/untangle-icon.png`.
+
+Untangle's pages describe the intended ad-enabled release. At review time, the iOS project has `UNTANGLE_ADS_READY=NO` and an empty `UNTANGLE_PRIVACY_POLICY_URL`. After deploying and verifying both Untangle HTTPS routes, set the app's policy URL, finish AdMob consent messages and App Store privacy/tracking disclosures, then enable Release ads only when that setup is complete. See the Untangle repository's `Privacy/RELEASE_SETUP.md` for the full checklist. The existing root `app-ads.txt` entry already matches Untangle's publisher and needs no additional line. Keep the App Store action marked coming soon until public availability is confirmed.
 
 This privacy policy is a plain-language technical summary, not legal advice. It should receive human/legal review before being treated as final.

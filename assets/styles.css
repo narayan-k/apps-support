@@ -120,6 +120,10 @@ h1 {
   align-items: stretch;
 }
 
+.app-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .app-card {
   min-height: 360px;
   padding: clamp(28px, 4vw, 48px);
@@ -269,6 +273,18 @@ h1 {
   font-weight: 610;
   letter-spacing: -0.075em;
   line-height: 0.86;
+}
+
+/* Untangle reuses Scene's overview and support layout. */
+.untangle-title {
+  font-size: clamp(3.8rem, 10vw, 7.2rem);
+}
+
+.untangle-stage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
 }
 
 .scene-lede {
